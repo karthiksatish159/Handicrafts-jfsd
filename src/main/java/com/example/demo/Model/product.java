@@ -10,6 +10,7 @@ import javax.persistence.Id;
 import javax.persistence.Lob;
 import javax.persistence.Table;
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.multipart.MultipartFile;
 
 @Entity
@@ -22,11 +23,11 @@ public class product
 	private String pname;
 	private String 	decs;
 	private String category;
-	private String edate;
 	private float unitinstock; 
     private String image;
 	private float discount;
 	private String sname;
+	@Value("${some.key:1}")
 	private int rating;
 	
 	public int getRating() {
@@ -75,12 +76,7 @@ public class product
 	public void setCategory(String category) {
 		this.category = category;
 	}
-	public String getEdate() {
-		return edate;
-	}
-	public void setEdate(String edate) {
-		this.edate = edate;
-	}
+
 	public float getUnitinstock() {
 		return unitinstock;
 	}

@@ -293,7 +293,6 @@ public class HomeController
 	    		@RequestParam("pname") String name,
 	    		@RequestParam("category") String category,
 	    		@RequestParam("desc") String desc,
-	    		@RequestParam("edate") String edate,
 	    		@RequestParam("stock") float stock, @RequestParam("discount") float discount,@RequestParam("sellername") String sellername,Model map, HttpServletRequest request)
 	   {
 		try {
@@ -302,7 +301,7 @@ public class HomeController
 			product.setImage(file);
 			product.setUnitinstock(stock);
 			product.setDecs(desc);
-			product.setEdate(edate);
+		
 			product.setCategory(category);
 			product.setDiscount(discount);
 			product.setRating(1);

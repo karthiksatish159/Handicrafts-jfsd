@@ -128,8 +128,8 @@ public class HomeController
 		User u=repo.findByEmail(uname);
 		if(u==null)
 		{
-			//mail.sendSimpleEmail(uname,
-					//"Thank you for Registering into sdp3handicrafts","Greetings");
+			mail.sendSimpleEmail(uname,
+				"Thank you for Registering into sdp3handicrafts","Greetings");
 			PasswordEncoder encoder = new BCryptPasswordEncoder();
 			String pass=user.getPassword();
 			String hashedPassword = encoder.encode(pass);
@@ -938,7 +938,7 @@ public class HomeController
 	    	
 	    	
 	    }
-	   // sendEmail();
+	   sendEmail();
 	    User obj=repo.findByUsername(uuname);
 	    int k=(int)obj.getId();
 	    cart123.deleteByCuid(k);

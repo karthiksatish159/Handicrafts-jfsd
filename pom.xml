@@ -14,8 +14,7 @@
 	<name>SDP-03-project</name>
 	<description>SpringBootwithFormHandling to form crud operations</description>
 	<properties>
-		    <java.version>1.8</java.version>
-
+		<java.version>1.8</java.version>
 	</properties>
 	<dependencies>
 	<!-- https://mvnrepository.com/artifact/com.fusioncharts/fusioncharts-free -->

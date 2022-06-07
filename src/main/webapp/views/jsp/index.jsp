@@ -34,6 +34,8 @@
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+	  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6670596862641454"
+     crossorigin="anonymous"></script>
   </head>
   <body>
     <div class="header">
